@@ -1,0 +1,62 @@
+<div class="login-container container">
+  <div class="content">
+    <div>
+      <button mat-icon-button class="close">
+        <mat-icon>close</mat-icon>
+      </button>
+      <img
+        src="https://confisio.com.br/wp-content/uploads/2018/08/simple-icon-twitter-white.png"
+        alt=""
+      />
+    </div>
+    <h2>Entrar no Twitter</h2>
+
+    <form>
+      <p class="banana">
+        <span>fazer login gmail</span>
+        <img
+          class="google"
+          src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
+        />
+      </p>
+
+      <div class="ou">
+        <p class="linha"></p>
+        <p>OU</p>
+        <p class="linha"></p>
+        
+      </div>
+      
+
+      <div class="form-group">
+        <input
+        type="text"
+        placeholder="Celular, e-mail ou nome de usuario"
+        class="form-control"
+        id="Username"
+        [(ngModel)]="valorDoImput"
+      />
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="password"
+          class="form-control"
+          id="pass"
+          [(ngModel)]="valorDoImput"
+        />
+      </div>
+
+      <div class="div-but">
+        <button type="submit" class="btn btn-primary button-avanc" (click)="login()">
+          Avançar
+        </button>
+        <button type="submit" class="btn btn-primary button-esq">
+          Esqueceu sua senha?
+        </button>
+      </div>
+
+      <p>Não tem uma conta? <a href="www.google.com">Inscreva-se</a></p>
+    </form>
+  </div>
+</div>
